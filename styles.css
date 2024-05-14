@@ -1,0 +1,304 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style untuk notifikasi pesanan */
+#notification {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 9999;
+    border-radius: 5px;
+    display: none;
+}
+
+h2 {
+    border-bottom: 2px solid #fff; /* Menambahkan garis bawah putih */
+    padding-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #000000;
+    background-image: url('images/background.png'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(153, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    display: flex; /* Membuat item menu menjadi flex container */
+    align-items: center; /* Memposisikan konten secara vertikal di tengah */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100px; /* Menyesuaikan lebar gambar */
+    margin-right: 20px; /* Memberi jarak antara gambar dengan konten teks */
+}
+
+.order-btn {
+    background-color: #990000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: auto; /* Mengatur tombol "Order Now" agar berada di sebelah kanan */
+}
+
+#cart {
+    float: right;
+    width: 30%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2 {
+    margin-bottom: 10px;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 10px;
+}
+
+#cart-items {
+    list-style: none;
+}
+
+#cart-items li {
+    margin-bottom: 1px;
+}
+
+#cart-items li:last-child {
+    margin-bottom: 0;   
+}
+
+#checkout-btn {
+    background-color: #990000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: rgba(153, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Style modal */
+.modal {
+    display: none; /* Sembunyikan modal secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Tambahkan sedikit transparansi untuk latar belakang */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Atur margin atas dan bawah untuk menengahkan modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Atur lebar modal */
+    max-width: 400px; /* Atur lebar maksimum modal */
+    border-radius: 10px;
+}
+
+/* Style untuk tombol close */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Gaya untuk tombol remove */
+.remove-btn {
+    background-color: #990000; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-left: 10px; 
+}
+
+/* Gaya saat tombol remove dihover */
+.remove-btn:hover {
+    background-color: #990000; 
+}
+
+.cart-icon {
+    width: 25px; /* Atur lebar ikon keranjang */
+    height: auto; /* Atur ketinggian ikon */
+    margin-right: 8px; /* Atur jarak antara ikon dan judul */
+}
+.cart-header {
+    display: flex; /* Atur tata letak menjadi flex */
+    align-items: center; /* Pusatkan ikon vertikal ke tengah */
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #e8491d;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 50px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+main {
+    padding: 20px;
+}
+
+#login {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+#login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e8491d;
+    border-radius: 5px;
+}
+
+footer {
+    background: #e8491d;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.login-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
